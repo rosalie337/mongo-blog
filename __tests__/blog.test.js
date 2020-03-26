@@ -28,7 +28,7 @@ describe('creates blog', () => {
   it('gets a blog by id', async() => {
     const blog = await getBlog();
     // need comments as well since we are populating in route
-    const comments = await getComments({ tweetId: blog._id });
+    const comments = await getComments({ blogId: blog._id });
 
     return request(app)
       .get(`/api/v1/blogs/${blog._id}`)

@@ -1,5 +1,5 @@
 const Blog = require('../lib/models/Blog');
-const Comment = require('../lib/routes/comment');
+const Comment = require('../lib/models/Comment');
 const chance = require('chance').Chance();
 
 // specifying the number of blogs to create with our seed function
